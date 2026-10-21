@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="color-scheme" content="light">
+    <meta name="description" content="Privacy policy for the LinkedIn Post Analytics Chrome extension.">
+    <title>Privacy Policy · LinkedIn Post Analytics</title>
+    <style>
+      :root {
+        color: #172033;
+        background: #f4f7fb;
+        font: 15px/1.55 Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      }
+
+      * { box-sizing: border-box; }
+      body { margin: 0; }
+      a { color: #0a66c2; text-underline-offset: 3px; }
+      a:hover { color: #004182; }
+
+      .shell {
+        width: min(760px, calc(100% - 32px));
+        margin: 32px auto;
+      }
+
+      .card {
+        background: #fff;
+        border: 1px solid #dce3ec;
+        border-radius: 22px;
+        box-shadow: 0 18px 50px rgba(23, 32, 51, 0.08);
+        overflow: hidden;
+      }
+
+      header {
+        padding: 32px 36px 28px;
+        color: #fff;
+        background: linear-gradient(135deg, #0a66c2, #2258d6 60%, #6246d7);
+      }
+
+      .eyebrow {
+        margin: 0 0 8px;
+        font-size: 0.78rem;
+        font-weight: 800;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        opacity: 0.82;
+      }
+
+      h1 {
+        max-width: 620px;
+        margin: 0;
+        font-size: clamp(1.85rem, 5vw, 2.75rem);
+        line-height: 1.08;
+        letter-spacing: -0.035em;
+      }
+
+      .effective {
+        margin: 12px 0 0;
+        color: rgba(255, 255, 255, 0.84);
+      }
+
+      main { padding: 10px 36px 30px; }
+      section { padding-top: 20px; }
+      h2 {
+        margin: 0 0 6px;
+        color: #172033;
+        font-size: 1.1rem;
+        line-height: 1.35;
+      }
+      p, ul { margin: 0 0 9px; }
+      ul { padding-left: 22px; }
+      li + li { margin-top: 5px; }
+
+      .summary {
+        margin: 6px 0 2px;
+        padding: 14px 16px;
+        border: 1px solid #b9d6f2;
+        border-radius: 14px;
+        background: #eff7ff;
+      }
+
+      footer {
+        padding: 18px 36px;
+        color: #5c667a;
+        border-top: 1px solid #e5eaf0;
+        background: #fafbfd;
+        font-size: 0.9rem;
+      }
+
+      @media (max-width: 600px) {
+        .shell { width: min(100% - 20px, 760px); margin: 10px auto; }
+        .card { border-radius: 16px; }
+        header { padding: 24px 20px 22px; }
+        main { padding: 6px 20px 24px; }
+        footer { padding: 16px 20px; }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="shell">
+      <article class="card">
+        <header>
+          <p class="eyebrow">LinkedIn Post Analytics</p>
+          <h1>Privacy Policy</h1>
+          <p class="effective">Effective date: October 21, 2026</p>
+        </header>
+
+        <main>
+          <section aria-labelledby="overview">
+            <h2 id="overview">Overview</h2>
+            <p class="summary"><strong>Your analytics stay in your browser.</strong> The extension has no developer-operated analytics server and does not sell your data.</p>
+            <p>This policy explains how the LinkedIn Post Analytics Chrome extension processes information when you use it.</p>
+          </section>
+
+          <section aria-labelledby="data">
+            <h2 id="data">Information the extension processes</h2>
+            <p>When you choose to scan LinkedIn, the extension may read information visible on the LinkedIn page in your active tab, including:</p>
+            <ul>
+              <li>Post text, post URL, author name, media type, and publication date.</li>
+              <li>Visible engagement counts such as reactions, comments, and reposts.</li>
+              <li>Visible names and profile links shown in reaction or comment details.</li>
+              <li>Scan timestamps and metric snapshots used to calculate changes over time.</li>
+            </ul>
+            <p>If you add a Gemini API key, the extension also stores that key locally in Chrome.</p>
+          </section>
+
+          <section aria-labelledby="use">
+            <h2 id="use">How information is used</h2>
+            <p>The extension uses this information only to provide the features you request: build the analytics dashboard, calculate engagement and trends, filter or compare posts, import or export your records, and optionally classify post topics with Gemini.</p>
+            <p>Information is not used for advertising, credit decisions, or sale to third parties.</p>
+          </section>
+
+          <section aria-labelledby="storage">
+            <h2 id="storage">Local storage and retention</h2>
+            <p>Collected post records and the Gemini API key are stored in <code>chrome.storage.local</code> on your device. The API key is stored separately and is excluded from CSV and JSON exports.</p>
+            <p>Records remain until you clear them in the extension, remove the extension and its local data, or replace them through an import. You can remove the Gemini key at any time from Settings.</p>
+          </section>
+
+          <section aria-labelledby="sharing">
+            <h2 id="sharing">Gemini and third-party sharing</h2>
+            <p>Topic analysis is optional and runs only after you add your own Gemini API key and select the analysis action. For that feature, the extension sends the relevant post text and media type directly to the Google Gemini API over HTTPS. Your API key is sent to Google only to authenticate that request.</p>
+            <p>Google processes that request under its own terms and privacy practices. Review the <a href="https://ai.google.dev/gemini-api/terms" target="_blank" rel="noreferrer">Gemini API terms</a> and <a href="https://policies.google.com/privacy" target="_blank" rel="noreferrer">Google Privacy Policy</a>.</p>
+            <p>No scanned LinkedIn data or Gemini key is sent to the extension developer.</p>
+          </section>
+
+          <section aria-labelledby="controls">
+            <h2 id="controls">Your choices and controls</h2>
+            <ul>
+              <li>Scanning starts only when you choose a scan action.</li>
+              <li>Gemini analysis is optional and requires your own key.</li>
+              <li>You can export your saved post records as CSV or JSON.</li>
+              <li>You can clear all saved post data or remove the Gemini key from Settings.</li>
+            </ul>
+          </section>
+
+          <section aria-labelledby="security">
+            <h2 id="security">Security</h2>
+            <p>The extension limits processing to the permissions and actions needed for its features and uses HTTPS for Gemini requests. No storage or transmission method can be guaranteed completely secure, so use an API key restricted to the Gemini API where available and keep your browser and extension updated.</p>
+          </section>
+
+          <section aria-labelledby="limited-use">
+            <h2 id="limited-use">Chrome Web Store Limited Use</h2>
+            <p>The use of information received from Google APIs will adhere to the Chrome Web Store User Data Policy, including the Limited Use requirements.</p>
+          </section>
+
+          <section aria-labelledby="children">
+            <h2 id="children">Children’s privacy</h2>
+            <p>The extension is not directed to children under 13 and does not knowingly collect personal information from children.</p>
+          </section>
+
+          <section aria-labelledby="changes">
+            <h2 id="changes">Changes to this policy</h2>
+            <p>This policy may be updated when the extension’s data practices or features change. The effective date at the top of this page will be revised when an update is published.</p>
+          </section>
+
+          <section aria-labelledby="contact">
+            <h2 id="contact">Contact</h2>
+            <p>For privacy questions or support, open an issue in the project’s <a href="https://github.com/rohitsingh-iitd/linkedin-post-analytics/issues" target="_blank" rel="noreferrer">GitHub repository</a>.</p>
+          </section>
+
+          <section aria-labelledby="independence">
+            <h2 id="independence">Independent extension</h2>
+            <p>LinkedIn Post Analytics is an independent project and is not affiliated with, endorsed by, or sponsored by LinkedIn or Google.</p>
+          </section>
+        </main>
+
+        <footer>
+          Privacy policy for the LinkedIn Post Analytics Chrome extension.
+        </footer>
+      </article>
+    </div>
+  </body>
+</html>
